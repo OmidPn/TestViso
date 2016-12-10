@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a205d9ed-1200-47b4-831b-a76713690452" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_ooxml_schemas_1_3.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_3_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestVisio.iml" afterPath="$PROJECT_DIR$/TestVisio.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyVisioImport.java" afterPath="$PROJECT_DIR$/src/main/java/MyVisioImport.java" />
     </list>
     <ignored path="TestViso.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -749,7 +744,7 @@
       <updated>1481317805755</updated>
       <workItem from="1481317812184" duration="1414000" />
       <workItem from="1481331089094" duration="3936000" />
-      <workItem from="1481336740350" duration="10600000" />
+      <workItem from="1481336740350" duration="10642000" />
     </task>
     <task id="LOCAL-00001" summary="3rd commit . resolve dependecy problem&#10;">
       <created>1481334560198</created>
@@ -765,11 +760,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481334796249</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4th commit . resolve dependecy problem&#10;">
+      <created>1481348198607</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481348198607</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15950000" />
+    <option name="totallyTimeSpent" value="15992000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -843,7 +845,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3rd commit . resolve dependecy problem&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit . resolve dependecy problem&#10;" />
+    <MESSAGE value="4th commit . resolve dependecy problem&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit . resolve dependecy problem&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -916,13 +919,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481348045015" expanded="true" signature="59:63226" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="98:214" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="192:214" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60500" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60518" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60531" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60546" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="59:64407" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="98:214" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="192:214" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61681" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61699" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61712" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61727" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1014,13 +1017,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481348045015" expanded="true" signature="59:63226" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="98:214" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="192:214" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60500" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60518" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60531" ph="..." />
-            <marker date="1481348045015" expanded="true" signature="60483:60546" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="59:64407" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="98:214" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="192:214" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61681" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61699" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61712" ph="..." />
+            <marker date="1481348164321" expanded="true" signature="61664:61727" ph="..." />
           </folding>
         </state>
       </provider>
