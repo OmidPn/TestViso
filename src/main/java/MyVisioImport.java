@@ -21,7 +21,7 @@ public class MyVisioImport {
             File myfile = new File("C:/Users/opanahi/Desktop/BPMN2.0project/justRec.vsdx");
             OPCPackage opcPackage=OPCPackage.open(new FileInputStream((fileName)));
 
-            xmlVisioDocument = new XmlVisioDocument(opcPackage);
+           xmlVisioDocument = new XmlVisioDocument(opcPackage);
             if(xmlVisioDocument!=null)
             {
                 System.out.printf("test");
