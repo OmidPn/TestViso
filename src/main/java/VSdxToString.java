@@ -12,8 +12,10 @@ import java.util.Set;
 
 import javax.imageio.ImageIO;
 
+import com.microsoft.schemas.office.visio.x2012.main.SectionType;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
+import org.apache.poi.sl.usermodel.MasterSheet;
 import org.apache.poi.xdgf.geom.Dimension2dDouble;
 import org.apache.poi.xdgf.usermodel.*;
 import org.apache.poi.xdgf.usermodel.shape.ShapeDebuggerRenderer;
@@ -23,7 +25,7 @@ import org.apache.poi.xdgf.xml.XDGFXMLDocumentPart;
 
 public class VSdxToString {
 
-	
+
 	public static void renderToPng(XDGFPage page, String outFilename, double scale, ShapeRenderer renderer) throws IOException {
 		renderToPng(page, new File(outFilename), scale, renderer);
 	}
@@ -90,7 +92,7 @@ public class VSdxToString {
 		    String fileName2= "C:/Users/opanahi/Desktop/BPMN2.0 project/start_Task.vsdx";
 
 
-			XmlVisioDocument xmlViso= new XmlVisioDocument(OPCPackage.open(new FileInputStream((fileName))));
+			XmlVisioDocument xmlViso= new XmlVisioDocument(OPCPackage.open(new FileInputStream((fileName2))));
 			getShapeName(xmlViso);
 
 		}
@@ -103,10 +105,42 @@ public class VSdxToString {
 
 	}//end of main
 	public static void getShapeName(XmlVisioDocument xmlVisio){
-		for (XDGFPage page: xmlVisio.getPages())
+
+		for (XDGFPage page: xmlVisio.getPages()){
+			int i=1;
 			for (Map.Entry<Long, XDGFShape> visioElement:page.getContent().getShapesMap().entrySet()) {
-				System.out.println(visioElement.getValue().getSymbolName());
+				if (visioElement.getValue().getXmlObject().getName() != null) {
+					System.out.println("\n----------------------------Object No:"+ i+"  ----------------------------------------------");
+
+					System.out.println(visioElement.getValue().getSymbolName());
+					System.out.println(visioElement.getValue().getXmlObject().getID());
+					SectionType  mysection [] = visioElement.getValue().getXmlObject().getSectionArray();
+					if(mysection.length>0) {
+
+						for(int j=0;j<mysection.length;j++)
+						{
+							if((mysection[j].getN().matches("Property"))){
+							System.out.println(mysection[j].getRowArray(0).getN().equals("BpmnTriggerOrResult"));
+						}
+                             if(mysection[j].getN().matches("Geometry"))
+								 break;
+							else{
+								 System.out.println(mysection[j].getN().toString());j++;
+							 }
+						}
+					}
+
+
+					System.out.println(visioElement.getValue().getXmlObject());
+
+					System.out.println("-----------------------------end----------------------------------");
+					i++;
+				}
+
 			}
+
+		}
+
 
 	}
 	public static void doCProp(XDGFDocument parts){

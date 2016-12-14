@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a205d9ed-1200-47b4-831b-a76713690452" name="Default" comment="">
+    <list default="true" id="a205d9ed-1200-47b4-831b-a76713690452" name="Default" comment="4th commit . resolve dependecy problem&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/VSdxToString.java" afterPath="$PROJECT_DIR$/src/main/java/VSdxToString.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TestViso.iws" />
@@ -31,19 +32,34 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitattributes" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1481757535080" expanded="true" signature="81600:81617" placeholder="..." />
+                <marker date="1481757535080" expanded="true" signature="81600:81635" placeholder="..." />
+                <marker date="1481757535080" expanded="true" signature="81600:81663" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,12 +67,9 @@
       <file leaf-file-name="PackagePart.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/openxml4j/opc/PackagePart.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.814815">
+            <state vertical-scroll-proportion="0.0">
               <caret line="249" column="27" selection-start-line="249" selection-start-column="27" selection-end-line="249" selection-end-column="27" />
-              <folding>
-                <element signature="e#10157#10158#0" expanded="true" />
-                <element signature="e#10194#10195#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,20 +77,18 @@
       <file leaf-file-name="XDGFSection.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/section/XDGFSection.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#4306#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VSdxToString.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VSdxToString.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/VSdxToString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.60229445">
+              <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,10 +96,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SheetType.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/SheetType.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.259259">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SectionType.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/SectionType.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7777777">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SectionTypeImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/ooxml-schemas/1.3/ooxml-schemas-1.3.jar!/com/microsoft/schemas/office/visio/x2012/main/impl/SectionTypeImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShapeSheetType.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/ShapeSheetType.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.259259">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShapeSheetTypeImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/ooxml-schemas/1.3/ooxml-schemas-1.3.jar!/com/microsoft/schemas/office/visio/x2012/main/impl/ShapeSheetTypeImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.259259">
+              <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="XDGFDocument.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFDocument.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.5555556">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
@@ -98,7 +159,7 @@
       <file leaf-file-name="VisioDocumentType.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/VisioDocumentType.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="51.62963">
+            <state vertical-scroll-proportion="0.0">
               <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
@@ -108,7 +169,7 @@
       <file leaf-file-name="XDGFXMLDocumentPart.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/xml/XDGFXMLDocumentPart.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.7777777">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
@@ -118,7 +179,7 @@
       <file leaf-file-name="XDGFBaseContents.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFBaseContents.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.074074">
+            <state vertical-scroll-proportion="0.0">
               <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
               <folding />
             </state>
@@ -130,7 +191,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="523" column="25" selection-start-line="523" selection-start-column="25" selection-end-line="523" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="e#0#54934#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,12 +202,9 @@
       <file leaf-file-name="XDGFPage.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFPage.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.592592">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding>
-                <element signature="e#1544#1545#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +223,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -171,51 +232,8 @@
       <file leaf-file-name="MyVisioImport.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/production/TestVisio/MyVisioImport.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4444447">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#1400#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="URLClassLoader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/net/URLClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassLoader.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/ClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="423" column="0" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Launcher.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/Launcher.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.296296">
-              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -244,8 +262,8 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/VsdxToPng.java" />
-        <option value="$PROJECT_DIR$/src/main/java/VSdxToString.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyVisioImport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/VSdxToString.java" />
       </list>
     </option>
   </component>
@@ -301,6 +319,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,7 +340,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TestViso" />
+              <option name="myItemId" value="TestViso1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,7 +350,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TestViso" />
+              <option name="myItemId" value="TestViso1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -347,9 +368,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -710,6 +728,7 @@
       <workItem from="1481331089094" duration="3936000" />
       <workItem from="1481336740350" duration="10642000" />
       <workItem from="1481553056115" duration="21193000" />
+      <workItem from="1481742117173" duration="13005000" />
     </task>
     <task id="LOCAL-00001" summary="3rd commit . resolve dependecy problem&#10;">
       <created>1481334560198</created>
@@ -739,7 +758,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37185000" />
+    <option name="totallyTimeSpent" value="50190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,26 +771,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32616082" sideWeight="0.48720682" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3250283" sideWeight="0.48720682" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36445445" sideWeight="0.24360341" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3336887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3238958" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54020387" sideWeight="0.7563966" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3227633" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40430352" sideWeight="0.7563966" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28541002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.094249204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45186862" sideWeight="0.48933902" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5549264" sideWeight="0.48933902" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -857,15 +876,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/VSdxToString.java</url>
-          <line>65</line>
+          <line>108</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -878,13 +897,173 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Graphics2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="523" column="25" selection-start-line="523" selection-start-column="25" selection-end-line="523" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#54934#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFPage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestVisio.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestVisio/MyVisioImport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31067#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#12207#12208#0" expanded="false" />
+            <element signature="e#12238#12239#0" expanded="false" />
+            <element signature="e#12582#12583#0" expanded="false" />
+            <element signature="e#12618#12619#0" expanded="false" />
+            <element signature="e#21775#21776#0" expanded="false" />
+            <element signature="e#21850#21851#0" expanded="false" />
+            <element signature="e#23561#23562#0" expanded="false" />
+            <element signature="e#23606#23607#0" expanded="false" />
+            <element signature="e#28480#28481#0" expanded="false" />
+            <element signature="e#28571#28572#0" expanded="false" />
+            <element signature="e#29546#29547#0" expanded="false" />
+            <element signature="e#29629#29630#0" expanded="false" />
+            <element signature="e#29851#29852#0" expanded="false" />
+            <element signature="e#29903#29904#0" expanded="false" />
+            <element signature="e#29972#29973#0" expanded="false" />
+            <element signature="e#30050#30051#0" expanded="false" />
+            <element signature="e#30481#30482#0" expanded="false" />
+            <element signature="e#30513#30514#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="423" column="0" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#84225#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10144#10145#0" expanded="false" />
+            <element signature="e#10181#10182#0" expanded="false" />
+            <element signature="e#11991#11992#0" expanded="false" />
+            <element signature="e#12045#12046#0" expanded="false" />
+            <element signature="e#12720#12721#0" expanded="false" />
+            <element signature="e#12790#12791#0" expanded="false" />
+            <element signature="e#37807#37808#0" expanded="false" />
+            <element signature="e#37839#37840#0" expanded="false" />
+            <element signature="e#40716#40717#0" expanded="false" />
+            <element signature="e#40753#40754#0" expanded="false" />
+            <element signature="e#44527#44528#0" expanded="false" />
+            <element signature="e#44554#44555#0" expanded="false" />
+            <element signature="e#48436#48437#0" expanded="false" />
+            <element signature="e#48499#48500#0" expanded="false" />
+            <element signature="e#48546#48547#0" expanded="false" />
+            <element signature="e#48604#48605#0" expanded="false" />
+            <element signature="e#48747#48748#0" expanded="false" />
+            <element signature="e#48811#48812#0" expanded="false" />
+            <element signature="e#63283#63284#0" expanded="false" />
+            <element signature="e#63310#63311#0" expanded="false" />
+            <element signature="e#66057#66058#0" expanded="false" />
+            <element signature="e#66137#66138#0" expanded="false" />
+            <element signature="e#70537#70538#0" expanded="false" />
+            <element signature="e#70627#70628#0" expanded="false" />
+            <element signature="e#83683#83684#0" expanded="false" />
+            <element signature="e#83719#83720#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#147821#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#23047#23048#0" expanded="false" />
+            <element signature="e#23104#23105#0" expanded="false" />
+            <element signature="e#23453#23454#0" expanded="false" />
+            <element signature="e#23509#23510#0" expanded="false" />
+            <element signature="e#32636#32637#0" expanded="false" />
+            <element signature="e#32683#32684#0" expanded="false" />
+            <element signature="e#45841#45842#0" expanded="false" />
+            <element signature="e#45932#45933#0" expanded="false" />
+            <element signature="e#56746#56747#0" expanded="false" />
+            <element signature="e#56789#56790#0" expanded="false" />
+            <element signature="e#58208#58209#0" expanded="false" />
+            <element signature="e#58257#58258#0" expanded="false" />
+            <element signature="e#58496#58497#0" expanded="false" />
+            <element signature="e#58567#58568#0" expanded="false" />
+            <element signature="e#58809#58810#0" expanded="false" />
+            <element signature="e#58891#58892#0" expanded="false" />
+            <element signature="e#104463#104464#0" expanded="false" />
+            <element signature="e#104523#104524#0" expanded="false" />
+            <element signature="e#112572#112573#0" expanded="false" />
+            <element signature="e#112604#112605#0" expanded="false" />
+            <element signature="e#112898#112899#0" expanded="false" />
+            <element signature="e#112942#112943#0" expanded="false" />
+            <element signature="e#114513#114514#0" expanded="false" />
+            <element signature="e#114550#114551#0" expanded="false" />
+            <element signature="e#114579#114580#0" expanded="false" />
+            <element signature="e#114620#114621#0" expanded="false" />
+            <element signature="e#117160#117161#0" expanded="false" />
+            <element signature="e#117198#117199#0" expanded="false" />
+            <element signature="e#136811#136812#0" expanded="false" />
+            <element signature="e#136896#136897#0" expanded="false" />
+            <element signature="e#139547#139548#0" expanded="false" />
+            <element signature="e#139624#139625#0" expanded="false" />
+            <element signature="e#144390#144391#0" expanded="false" />
+            <element signature="e#144427#144428#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MyVisioImport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -892,9 +1071,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +1079,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1481757535080" expanded="true" signature="81600:81617" placeholder="..." />
+            <marker date="1481757535080" expanded="true" signature="81600:81635" placeholder="..." />
+            <marker date="1481757535080" expanded="true" signature="81600:81663" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,9 +1121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,13 +1166,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#147821#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#23047#23048#0" expanded="false" />
+            <element signature="e#23104#23105#0" expanded="false" />
+            <element signature="e#23453#23454#0" expanded="false" />
+            <element signature="e#23509#23510#0" expanded="false" />
+            <element signature="e#32636#32637#0" expanded="false" />
+            <element signature="e#32683#32684#0" expanded="false" />
+            <element signature="e#45841#45842#0" expanded="false" />
+            <element signature="e#45932#45933#0" expanded="false" />
+            <element signature="e#56746#56747#0" expanded="false" />
+            <element signature="e#56789#56790#0" expanded="false" />
+            <element signature="e#58208#58209#0" expanded="false" />
+            <element signature="e#58257#58258#0" expanded="false" />
+            <element signature="e#58496#58497#0" expanded="false" />
+            <element signature="e#58567#58568#0" expanded="false" />
+            <element signature="e#58809#58810#0" expanded="false" />
+            <element signature="e#58891#58892#0" expanded="false" />
+            <element signature="e#104463#104464#0" expanded="false" />
+            <element signature="e#104523#104524#0" expanded="false" />
+            <element signature="e#112572#112573#0" expanded="false" />
+            <element signature="e#112604#112605#0" expanded="false" />
+            <element signature="e#112898#112899#0" expanded="false" />
+            <element signature="e#112942#112943#0" expanded="false" />
+            <element signature="e#114513#114514#0" expanded="false" />
+            <element signature="e#114550#114551#0" expanded="false" />
+            <element signature="e#114579#114580#0" expanded="false" />
+            <element signature="e#114620#114621#0" expanded="false" />
+            <element signature="e#117160#117161#0" expanded="false" />
+            <element signature="e#117198#117199#0" expanded="false" />
+            <element signature="e#136811#136812#0" expanded="false" />
+            <element signature="e#136896#136897#0" expanded="false" />
+            <element signature="e#139547#139548#0" expanded="false" />
+            <element signature="e#139624#139625#0" expanded="false" />
+            <element signature="e#144390#144391#0" expanded="false" />
+            <element signature="e#144427#144428#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/Launcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.296296">
+        <state vertical-scroll-proportion="0.0">
           <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding />
         </state>
@@ -1005,7 +1219,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="423" column="0" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#84225#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10144#10145#0" expanded="false" />
+            <element signature="e#10181#10182#0" expanded="false" />
+            <element signature="e#11991#11992#0" expanded="false" />
+            <element signature="e#12045#12046#0" expanded="false" />
+            <element signature="e#12720#12721#0" expanded="false" />
+            <element signature="e#12790#12791#0" expanded="false" />
+            <element signature="e#37807#37808#0" expanded="false" />
+            <element signature="e#37839#37840#0" expanded="false" />
+            <element signature="e#40716#40717#0" expanded="false" />
+            <element signature="e#40753#40754#0" expanded="false" />
+            <element signature="e#44527#44528#0" expanded="false" />
+            <element signature="e#44554#44555#0" expanded="false" />
+            <element signature="e#48436#48437#0" expanded="false" />
+            <element signature="e#48499#48500#0" expanded="false" />
+            <element signature="e#48546#48547#0" expanded="false" />
+            <element signature="e#48604#48605#0" expanded="false" />
+            <element signature="e#48747#48748#0" expanded="false" />
+            <element signature="e#48811#48812#0" expanded="false" />
+            <element signature="e#63283#63284#0" expanded="false" />
+            <element signature="e#63310#63311#0" expanded="false" />
+            <element signature="e#66057#66058#0" expanded="false" />
+            <element signature="e#66137#66138#0" expanded="false" />
+            <element signature="e#70537#70538#0" expanded="false" />
+            <element signature="e#70627#70628#0" expanded="false" />
+            <element signature="e#83683#83684#0" expanded="false" />
+            <element signature="e#83719#83720#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,18 +1256,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#31067#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#12207#12208#0" expanded="false" />
+            <element signature="e#12238#12239#0" expanded="false" />
+            <element signature="e#12582#12583#0" expanded="false" />
+            <element signature="e#12618#12619#0" expanded="false" />
+            <element signature="e#21775#21776#0" expanded="false" />
+            <element signature="e#21850#21851#0" expanded="false" />
+            <element signature="e#23561#23562#0" expanded="false" />
+            <element signature="e#23606#23607#0" expanded="false" />
+            <element signature="e#28480#28481#0" expanded="false" />
+            <element signature="e#28571#28572#0" expanded="false" />
+            <element signature="e#29546#29547#0" expanded="false" />
+            <element signature="e#29629#29630#0" expanded="false" />
+            <element signature="e#29851#29852#0" expanded="false" />
+            <element signature="e#29903#29904#0" expanded="false" />
+            <element signature="e#29972#29973#0" expanded="false" />
+            <element signature="e#30050#30051#0" expanded="false" />
+            <element signature="e#30481#30482#0" expanded="false" />
+            <element signature="e#30513#30514#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/TestVisio/MyVisioImport.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4444447">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#1400#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,9 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.1">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3991#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,7 +1300,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="523" column="25" selection-start-line="523" selection-start-column="25" selection-end-line="523" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#54934#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,18 +1311,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7777777">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/openxml4j/opc/PackagePart.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.814815">
+        <state vertical-scroll-proportion="0.0">
           <caret line="249" column="27" selection-start-line="249" selection-start-column="27" selection-end-line="249" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFPage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/shape/ShapeRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49671772">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFShape.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6695843">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFBaseContents.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/xml/XDGFXMLDocumentPart.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/VisioDocumentType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFDocument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFSheet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7768595">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/section/XDGFSection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#10157#10158#0" expanded="true" />
-            <element signature="e#10194#10195#0" expanded="true" />
+            <marker date="1481757535080" expanded="true" signature="81600:81617" placeholder="..." />
+            <marker date="1481757535080" expanded="true" signature="81600:81635" placeholder="..." />
+            <marker date="1481757535080" expanded="true" signature="81600:81663" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyVisioImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,121 +1433,58 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFPage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.592592">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/shape/ShapeRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49671772">
           <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFShape.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6695843">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFBaseContents.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/ooxml-schemas/1.3/ooxml-schemas-1.3.jar!/com/microsoft/schemas/office/visio/x2012/main/impl/ShapeSheetTypeImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.074074">
-          <caret line="136" column="16" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="16" />
+        <state vertical-scroll-proportion="-4.259259">
+          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/xml/XDGFXMLDocumentPart.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/ShapeSheetType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.259259">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/ooxml-schemas/1.3/ooxml-schemas-1.3.jar!/com/microsoft/schemas/office/visio/x2012/main/impl/SectionTypeImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/SectionType.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7777777">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/VisioDocumentType.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.15/poi-ooxml-schemas-3.15.jar!/com/microsoft/schemas/office/visio/x2012/main/SheetType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="51.62963">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state vertical-scroll-proportion="-4.259259">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFDocument.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.5555556">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/XDGFSheet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.7768595">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-            <element signature="e#2820#2821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15.jar!/org/apache/poi/xdgf/usermodel/section/XDGFSection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#4306#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/VSdxToString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="108" column="13" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.60229445">
+          <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyVisioImport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
