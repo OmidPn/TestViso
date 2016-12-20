@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import javax.imageio.ImageIO;
@@ -18,6 +20,8 @@ import org.apache.poi.xdgf.geom.Dimension2dDouble;
 import org.apache.poi.xdgf.usermodel.*;
 import org.apache.poi.xdgf.usermodel.shape.ShapeRenderer;
 import org.apache.poi.xdgf.util.Util;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class VSdxToString {
 
@@ -25,23 +29,23 @@ public class VSdxToString {
 	public static void renderToPng(XDGFPage page, String outFilename, double scale, ShapeRenderer renderer) throws IOException {
 		renderToPng(page, new File(outFilename), scale, renderer);
 	}
-	
+
 	public static void renderToPngDir(XDGFPage page, File outDir, double scale, ShapeRenderer renderer) throws IOException {
-		
+
 		File pageFile = new File(outDir, "page" + page.getPageNumber() + "-" + Util.sanitizeFilename(page.getName()) + ".png");
 		System.out.println("** Writing image to " + pageFile);
-		
+
 		renderToPng(page, pageFile, scale, renderer);
-		
+
 	}
 	
 	public static void renderToPng(XDGFPage page, File outFile, double scale, ShapeRenderer renderer) throws IOException {
-		
+
 		Dimension2dDouble sz = page.getPageSize();
-		
+
 		int width = (int)(scale * sz.getWidth());
 		int height = (int)(scale * sz.getHeight());
-		
+
 		BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         final Graphics2D graphics = img.createGraphics();
 
@@ -54,31 +58,31 @@ public class VSdxToString {
         graphics.setColor(Color.black);
         graphics.setBackground(Color.white);
         graphics.clearRect(0, 0, width, height);
-        
+
         // Visio's coordinate system is flipped, so flip the image vertically
         graphics.translate(0,  img.getHeight());
         graphics.scale(scale, -scale);
-        
+
         // toplevel shapes only
         renderer.setGraphics(graphics);
         page.getContent().visitShapes(renderer);
 
         graphics.dispose();
-        
+
         FileOutputStream out = new FileOutputStream(outFile);
         ImageIO.write(img, "png", out);
         out.close();
 	}
 	
 	public static void renderToPng(XmlVisioDocument document, String outDirname, double scale, ShapeRenderer renderer) throws IOException {
-		
+
 		File outDir = new File(outDirname);
 
 		for (XDGFPage page: document.getPages()) {
 			renderToPngDir(page, outDir, scale, renderer);
 		}
 	}
-	
+
 	public static void main(String [] args) throws Exception {
      try {
 
@@ -116,10 +120,10 @@ public class VSdxToString {
 
 						for(int j=0;j<mysection.length;j++)
 						{
-							QName testQ= new QName("http://schemas.microsoft.com/office/visio/2012/main","Section_Type",true);
+							//QName testQ= new QName("http://schemas.microsoft.com/office/visio/2012/main","Section_Type",true);
 
 							if(isAction(mysection[j])){
-								return;
+								System.out.println(findAction(mysection[j]).toString());
 								//String findpropety= findActionType(mysection[j].getN())
 							}
 							if((mysection[j].getN().matches("Property"))){
@@ -179,5 +183,20 @@ public class VSdxToString {
 		return(sectionType.getN().matches("Geometry"));
 	}
 
+    public VisioAcion findAction(SectionType  sectionType){
+		VisioAcion visioAcion=new VisioAcion();
+		if(isAction(sectionType))
+		 for (int i=0;i<sectionType.getDomNode().getChildNodes().getLength();i++){
+          if(sectionType.getDomNode().getChildNodes().item(i).getFirstChild().getChildNodes().item(2).getNodeValue().equals("1")){
+           visioAcion.setValue(sectionType.getDomNode().getChildNodes().item(i).getFirstChild().getNodeValue());
+		  }
+		}
+      return visioAcion;
+	}
+    /// to get node and childs
+	//mysection[j].getDomNode().getChildNodes().item(1).getFirstChild().getAttributes().item(3).getNodeValue()
+	//mysection[j].getDomNode().getChildNodes().item(0).getAttributes().item(0).getNodeValue()
+
+	//public static void
 
 }
