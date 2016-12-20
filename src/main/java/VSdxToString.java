@@ -1,27 +1,23 @@
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-import java.awt.geom.Point2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Map;
-import java.util.Set;
 
 import javax.imageio.ImageIO;
 
 import com.microsoft.schemas.office.visio.x2012.main.SectionType;
+import com.sun.org.apache.xml.internal.utils.QName;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
-import org.apache.poi.sl.usermodel.MasterSheet;
 import org.apache.poi.xdgf.geom.Dimension2dDouble;
 import org.apache.poi.xdgf.usermodel.*;
-import org.apache.poi.xdgf.usermodel.shape.ShapeDebuggerRenderer;
 import org.apache.poi.xdgf.usermodel.shape.ShapeRenderer;
 import org.apache.poi.xdgf.util.Util;
-import org.apache.poi.xdgf.xml.XDGFXMLDocumentPart;
 
 public class VSdxToString {
 
@@ -93,7 +89,7 @@ public class VSdxToString {
 
 
 			XmlVisioDocument xmlViso= new XmlVisioDocument(OPCPackage.open(new FileInputStream((fileName2))));
-			getShapeName(xmlViso);
+			getAllObject(xmlViso);
 
 		}
 		catch (InvalidFormatException e) {
@@ -104,26 +100,35 @@ public class VSdxToString {
 
 
 	}//end of main
-	public static void getShapeName(XmlVisioDocument xmlVisio){
+	public static void getAllObject(XmlVisioDocument xmlVisio){
 
 		for (XDGFPage page: xmlVisio.getPages()){
 			int i=1;
 			for (Map.Entry<Long, XDGFShape> visioElement:page.getContent().getShapesMap().entrySet()) {
 				if (visioElement.getValue().getXmlObject().getName() != null) {
 					System.out.println("\n----------------------------Object No:"+ i+"  ----------------------------------------------");
+					//System.out.println("check my function: "+getObjectName((XDGFShape) visioElement));
+					System.out.println("name:"+getObjectName(visioElement.getValue().getSymbolName()));
 
-					System.out.println(visioElement.getValue().getSymbolName());
-					System.out.println(visioElement.getValue().getXmlObject().getID());
+					System.out.println("Id :" + visioElement.getValue().getXmlObject().getID());
 					SectionType  mysection [] = visioElement.getValue().getXmlObject().getSectionArray();
 					if(mysection.length>0) {
 
 						for(int j=0;j<mysection.length;j++)
 						{
+							QName testQ= new QName("http://schemas.microsoft.com/office/visio/2012/main","Section_Type",true);
+
+							if(isAction(mysection[j])){
+								return;
+								//String findpropety= findActionType(mysection[j].getN())
+							}
 							if((mysection[j].getN().matches("Property"))){
 							System.out.println(mysection[j].getRowArray(0).getN().equals("BpmnTriggerOrResult"));
-						}
+						     }
                              if(mysection[j].getN().matches("Geometry"))
 								 break;
+							if(mysection[j].getN().matches("Geometry"))
+								break;
 							else{
 								 System.out.println(mysection[j].getN().toString());j++;
 							 }
@@ -146,6 +151,33 @@ public class VSdxToString {
 	public static void doCProp(XDGFDocument parts){
 		System.out.println(parts.getXmlObject().toString());
 
-
 	}
+ // flowObject
+   public static String getObjectName(String flowobjectName){
+	   if (flowobjectName.equals("Task"))return "Task";
+	   else if (flowobjectName.equals("End Event"))return "End Event";
+	   else if (flowobjectName.equals("Intermediate Event"))return "Intermediate Event";
+	   else if (flowobjectName.equals("Gateway"))return "Gateway";
+	   else if (flowobjectName.equals("Rectangle"))return "Rectangle";
+	   else if (flowobjectName.equals("Triangle"))return "Triangle";
+	   else if (flowobjectName.equals("Dynamic Connector"))return "Dynamic Connector";
+	   else if (flowobjectName.equals(" Collapsed Sub-Process.14"))return " Collapsed Sub-Process.14";
+
+	   else return "NotDefined";
+	  }
+
+
+
+	//select sections
+	public static boolean isProperty(SectionType  sectionType){
+		return(sectionType.getN().matches("Property"));
+	}
+	public static boolean isAction(SectionType  sectionType){
+		return(sectionType.getN().matches("Action"));
+	}
+	public static boolean isShape(SectionType  sectionType){
+		return(sectionType.getN().matches("Geometry"));
+	}
+
+
 }
