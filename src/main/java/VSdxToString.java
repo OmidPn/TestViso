@@ -110,9 +110,8 @@ public class VSdxToString {
 			int i=1;
 			for (Map.Entry<Long, XDGFShape> visioElement:page.getContent().getShapesMap().entrySet()) {
 				if (visioElement.getValue().getXmlObject().getName() != null) {
-					System.out.println("\n----------------------------Object No:"+ i+"  ----------------------------------------------");
-					//System.out.println("check my function: "+getObjectName((XDGFShape) visioElement));
-					System.out.println("name:"+getObjectName(visioElement.getValue().getSymbolName()));
+					System.out.println("\n\n----------------------------Object No:"+ i+"  ----------------------------------------------");
+					System.out.println("Object Name:"+getObjectName(visioElement.getValue().getSymbolName()));
 
 					System.out.println("Id :" + visioElement.getValue().getXmlObject().getID());
 					SectionType  mysection [] = visioElement.getValue().getXmlObject().getSectionArray();
@@ -120,8 +119,6 @@ public class VSdxToString {
 
 						for(int j=0;j<mysection.length;j++)
 						{
-							//QName testQ= new QName("http://schemas.microsoft.com/office/visio/2012/main","Section_Type",true);
-
 							if(isAction(mysection[j])){
 								for (int m=0;m<mysection[j].getDomNode().getChildNodes().getLength();m++){
 									if(mysection[j].getDomNode().getChildNodes().item(m).getFirstChild().getAttributes().item(2).getNodeValue().equals("1"))
@@ -136,32 +133,15 @@ public class VSdxToString {
 										System.out.println("task type: "+mysection[j].getDomNode().getChildNodes().item(m).getAttributes().item(0).getNodeValue());
 								}
 							}//end of if it is Action
-							if(isShape(mysection[j])){
-//								for (int m=0;m<mysection[j].getDomNode().getChildNodes().getLength();m++){
-//									if(mysection[j].getDomNode().getChildNodes().item(m).getFirstChild().getAttributes().item(2).getNodeValue().equals("1"))
-//										System.out.println("type : "+mysection[j].getDomNode().getChildNodes().item(m).getAttributes().item(0).getNodeValue());
-//								}
+//
 
-							}//end of if it is Action
-
-
-//							if((mysection[j].getN().matches("Property"))){
-//							System.out.println(mysection[j].getRowArray(0).getN().equals("BpmnTriggerOrResult"));
-//						     }
-                             if(mysection[j].getN().matches("Geometry"))
-								 break;
-							if(mysection[j].getN().matches("Geometry"))
-								break;
-						else{
-							 System.out.println(mysection[j].getN().toString());j++;
-						 }
 						}
 					}
 
-
+                      //show xml file
 					//System.out.println(visioElement.getValue().getXmlObject());
 
-					System.out.println("-----------------------------end----------------------------------");
+					System.out.println("-------------------------------------------------------------------------------");
 					i++;
 				}
 
@@ -184,7 +164,9 @@ public class VSdxToString {
 	   else if (flowobjectName.equals("Rectangle"))return "Rectangle";
 	   else if (flowobjectName.equals("Triangle"))return "Triangle";
 	   else if (flowobjectName.equals("Dynamic Connector"))return "Dynamic Connector";
-	   else if (flowobjectName.equals(" Collapsed Sub-Process.14"))return " Collapsed Sub-Process.14";
+	   else if (flowobjectName.equals("Collapsed Sub-Process.14"))return "Collapsed Sub-Process.14";
+	   else if (flowobjectName.equals("Start Event"))return "Start Event";
+	   else if (flowobjectName.equals("Sequence Flow"))return "Sequence Flow";
 
 	   else return "NotDefined";
 	  }
