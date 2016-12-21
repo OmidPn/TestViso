@@ -87,13 +87,13 @@ public class MyVisioImport {
             OutputStreamWriter osw = new OutputStreamWriter(is);
              w = new BufferedWriter(osw);
 
-            String fileName ="C:/Users/opanahi/Desktop/BPMN2.0 project/justRec.vsdx";
+            String fileName ="C:/Users/opanahi/Desktop/BPMN2.0 project/simpleflow.vsdx";
 
             String fileName1="C:/Users/opanahi/Desktop/BPMN2.0 project/exampleofBPMN2.vsdx";
             String fileName2= "C:/Users/opanahi/Desktop/BPMN2.0 project/start_Task.vsdx";
 
 
-            XmlVisioDocument xmlViso= new XmlVisioDocument(OPCPackage.open(new FileInputStream((fileName2))));
+            XmlVisioDocument xmlViso= new XmlVisioDocument(OPCPackage.open(new FileInputStream((fileName))));
             getAllObject(xmlViso);
             w.close();
         }
@@ -109,6 +109,12 @@ public class MyVisioImport {
 
         for (XDGFPage page: xmlVisio.getPages()){
             int i=1;
+
+            XDGFConnection xdgfConnection  =page.getContent().getConnections().get(0);
+            System.out.println(xdgfConnection.getToCellName());
+            System.out.println(xdgfConnection.getToShape().getXmlObject().getName().toString());
+            System.out.println(xdgfConnection.getFromPart().toString());
+
             for (Map.Entry<Long, XDGFShape> visioElement:page.getContent().getShapesMap().entrySet()) {
                 if (visioElement.getValue().getXmlObject().getName() != null) {
                     System.out.println("\n\n----------------------------Object No:"+ i+"  ----------------------------------------------");
@@ -147,7 +153,7 @@ public class MyVisioImport {
                     }
 
                     //show xml file
-                    System.out.println(visioElement.getValue().getXmlObject());
+                   // System.out.println(visioElement.getValue().getXmlObject());
 
                     System.out.println("-------------------------------------------------------------------------------");
                     i++;
