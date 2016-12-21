@@ -123,24 +123,43 @@ public class VSdxToString {
 							//QName testQ= new QName("http://schemas.microsoft.com/office/visio/2012/main","Section_Type",true);
 
 							if(isAction(mysection[j])){
-								System.out.println(findAction(mysection[j]).toString());
-								//String findpropety= findActionType(mysection[j].getN())
-							}
-							if((mysection[j].getN().matches("Property"))){
-							System.out.println(mysection[j].getRowArray(0).getN().equals("BpmnTriggerOrResult"));
-						     }
+								for (int m=0;m<mysection[j].getDomNode().getChildNodes().getLength();m++){
+									if(mysection[j].getDomNode().getChildNodes().item(m).getFirstChild().getAttributes().item(2).getNodeValue().equals("1"))
+									System.out.println("task type: "+mysection[j].getDomNode().getChildNodes().item(m).getAttributes().item(0).getNodeValue());
+							     }
+							}//end of if it is Action
+
+
+							if(isProperty(mysection[j])){
+								for (int m=0;m<mysection[j].getDomNode().getChildNodes().getLength();m++){
+									if(mysection[j].getDomNode().getChildNodes().item(m).getFirstChild().getAttributes().item(2).getNodeValue().equals("1"))
+										System.out.println("task type: "+mysection[j].getDomNode().getChildNodes().item(m).getAttributes().item(0).getNodeValue());
+								}
+							}//end of if it is Action
+							if(isShape(mysection[j])){
+//								for (int m=0;m<mysection[j].getDomNode().getChildNodes().getLength();m++){
+//									if(mysection[j].getDomNode().getChildNodes().item(m).getFirstChild().getAttributes().item(2).getNodeValue().equals("1"))
+//										System.out.println("type : "+mysection[j].getDomNode().getChildNodes().item(m).getAttributes().item(0).getNodeValue());
+//								}
+
+							}//end of if it is Action
+
+
+//							if((mysection[j].getN().matches("Property"))){
+//							System.out.println(mysection[j].getRowArray(0).getN().equals("BpmnTriggerOrResult"));
+//						     }
                              if(mysection[j].getN().matches("Geometry"))
 								 break;
 							if(mysection[j].getN().matches("Geometry"))
 								break;
-							else{
-								 System.out.println(mysection[j].getN().toString());j++;
-							 }
+						else{
+							 System.out.println(mysection[j].getN().toString());j++;
+						 }
 						}
 					}
 
 
-					System.out.println(visioElement.getValue().getXmlObject());
+					//System.out.println(visioElement.getValue().getXmlObject());
 
 					System.out.println("-----------------------------end----------------------------------");
 					i++;
@@ -177,22 +196,22 @@ public class VSdxToString {
 		return(sectionType.getN().matches("Property"));
 	}
 	public static boolean isAction(SectionType  sectionType){
-		return(sectionType.getN().matches("Action"));
+		return(sectionType.getN().matches("Actions"));
 	}
 	public static boolean isShape(SectionType  sectionType){
 		return(sectionType.getN().matches("Geometry"));
 	}
 
-    public VisioAcion findAction(SectionType  sectionType){
-		VisioAcion visioAcion=new VisioAcion();
-		if(isAction(sectionType))
-		 for (int i=0;i<sectionType.getDomNode().getChildNodes().getLength();i++){
-          if(sectionType.getDomNode().getChildNodes().item(i).getFirstChild().getChildNodes().item(2).getNodeValue().equals("1")){
-           visioAcion.setValue(sectionType.getDomNode().getChildNodes().item(i).getFirstChild().getNodeValue());
-		  }
-		}
-      return visioAcion;
-	}
+//    public VisioAcion findAction(SectionType  sectionType){
+//		VisioAcion visioAcion=new VisioAcion();
+//		if(isAction(sectionType))
+//		 for (int i=0;i<sectionType.getDomNode().getChildNodes().getLength();i++){
+//          if(sectionType.getDomNode().getChildNodes().item(i).getFirstChild().getChildNodes().item(2).getNodeValue().equals("1")){
+//           visioAcion.setValue(sectionType.getDomNode().getChildNodes().item(i).getFirstChild().getNodeValue());
+//		  }
+//		}
+//      return visioAcion;
+//	}
     /// to get node and childs
 	//mysection[j].getDomNode().getChildNodes().item(1).getFirstChild().getAttributes().item(3).getNodeValue()
 	//mysection[j].getDomNode().getChildNodes().item(0).getAttributes().item(0).getNodeValue()

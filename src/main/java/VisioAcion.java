@@ -61,25 +61,25 @@ public class VisioAcion {
         return Service.equals("Service");
     }
 
-  public void setValue(String string){
-      switch (string){
-          case "NoLoop": {
-              this.NoLoop="NoLoop";
-              break;
-          }
-          case "StandardLoop": {
-              this.StandardLoop="StandardLoop";
-              break;
-          }
-          case "NoTaskType": {
-              this.NoTaskType="NoTaskType";
-              break;
-          }
-          case "Service": {
-              this.Service="Service";
-              break;
-          }
+//  public void setValue(String string){
+//      switch (string){
+//          case "NoLoop": {
+//              this.NoLoop="NoLoop";
+//              break;
+//          }
+//          case "StandardLoop": {
+//              this.StandardLoop="StandardLoop";
+//              break;
+//          }
+//          case "NoTaskType": {
+//              this.NoTaskType="NoTaskType";
+//              break;
+//          }
+//          case "Service": {
+//              this.Service="Service";
+//              break;
+//          }
+//
+//      }
 
-      }
-  }
 }//end of class
